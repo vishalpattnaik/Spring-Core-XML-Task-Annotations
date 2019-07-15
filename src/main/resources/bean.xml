@@ -1,0 +1,56 @@
+<!--<?xml version="1.0" encoding="UTF-8" ?>-->
+
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+<!--       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--       xsi:schemaLocation="http://www.springframework.org/schema/beans-->
+<!--        https://www.springframework.org/schema/beans/spring-beans.xsd">-->
+
+
+<!--    <bean id = "actor1" class =  "com.stackroute.domain.Actor">-->
+
+<!--        <constructor-arg value="Vishal Pattnaik" />-->
+
+<!--        <constructor-arg value="male" />-->
+
+<!--        <constructor-arg value="22" />-->
+
+<!--    </bean>-->
+
+<!--    <bean id = "actor2" class =  "com.stackroute.domain.Actor">-->
+
+<!--        <constructor-arg value="Alia Bhatt" />-->
+
+<!--        <constructor-arg value="female" />-->
+
+<!--        <constructor-arg value="24" />-->
+<!--    </bean>-->
+
+<!--    <bean id = "movie" scope = "prototype" class = "com.stackroute.domain.Movie" autowire="byName">-->
+<!--    </bean>-->
+
+<!--&lt;!&ndash;    <bean name = "movie1, movie2" scope = "prototype" class = "com.stackroute.domain.Movie" autowire="constructor">&ndash;&gt;-->
+
+<!--&lt;!&ndash;    </bean>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <bean name = "movie1, movie2" class =  "com.stackroute.domain.Movie" scope = "prototype">&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <constructor-arg ref = "actor1" />&ndash;&gt;-->
+<!--&lt;!&ndash;        <constructor-arg ref="actor2" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;    </bean>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <bean id = "movie2" class =  "com.stackroute.domain.Movie">&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <constructor-arg ref="actor2" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;    </bean>&ndash;&gt;-->
+
+<!--    <bean id = "beanlifecycledemo" class = "com.stackroute.domain.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy">-->
+<!--        <property name="message" value="This is Vishal Pattnaik...." />-->
+<!--    </bean>-->
+
+<!--    <bean id = "beanpostprocessordemobean" class = "com.stackroute.domain.BeanPostProcessorDemoBean" >-->
+
+<!--    </bean>-->
+
+<!--</beans>-->
