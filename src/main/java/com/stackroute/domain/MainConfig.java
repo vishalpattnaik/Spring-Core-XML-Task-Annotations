@@ -1,6 +1,7 @@
 package com.stackroute.domain;
 
 import com.stackroute.demo.BeanLifeCycleDemoBean;
+import com.stackroute.demo.BeanPostProcessorDemo;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
@@ -23,20 +24,18 @@ public class MainConfig {
 //
 //    }
 
-    @Bean
-    public Movie movie() {
-
-        Movie movie = new Movie(actor1());
-        return movie;
-
-    }
-
     @Bean(initMethod = "customInit",destroyMethod = "customDestroy")
     public BeanLifeCycleDemoBean beanLifeCycleDemoBean()
     {
         BeanLifeCycleDemoBean beanLifecycleDemoBean=new BeanLifeCycleDemoBean();
         return beanLifecycleDemoBean;
 
+    }
+    @Bean
+    public BeanPostProcessorDemo beanPostProcessorDemo()
+    {
+        BeanPostProcessorDemo beanPostProcessorDemo=new BeanPostProcessorDemo();
+        return beanPostProcessorDemo;
     }
 
 }
