@@ -14,12 +14,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ApplicationContext context=new AnnotationConfigApplicationContext(MainConfig.class);
-        Movie mv=context.getBean("movie11", Movie.class);
+        AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(MainConfig.class);
+        context.scan("com.stackroute");
+        Movie mv=context.getBean("movie", Movie.class);
         System.out.println(mv);
-        Movie mv1 = context.getBean("movie22", Movie.class);
-        System.out.println(mv1);
-        System.out.println(mv==mv1);
 
     }
 

@@ -26,18 +26,6 @@ public class Actor {
         this.age = age;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
     @Override
     public String toString() {
         return "Actor{" +
